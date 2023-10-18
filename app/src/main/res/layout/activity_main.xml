@@ -351,77 +351,96 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    <ImageView
-        android:id="@+id/image2"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-
-        android:layout_marginBottom="8dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/home"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/image4"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-
-        android:layout_marginBottom="8dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/notification"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/image5"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-
-        android:layout_centerInParent="true"
-        android:layout_marginTop="32dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/empty"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/image6"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-
-        android:layout_marginBottom="8dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/video"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
 
-    <ImageView
-        android:id="@+id/image7"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+<!--    <ImageView-->
+<!--        android:id="@+id/image2"-->
+<!--        android:layout_width="38dp"-->
+<!--        android:layout_height="38dp"-->
 
-        android:layout_marginBottom="8dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/profile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.924"
-        app:layout_constraintStart_toStartOf="parent" />
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/home"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.077"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image4"-->
+<!--        android:layout_width="38dp"-->
+<!--        android:layout_height="38dp"-->
+
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/notification"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.281"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image5"-->
+<!--        android:layout_width="38dp"-->
+<!--        android:layout_height="38dp"-->
+
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/empty"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"-->
+<!--        app:layout_constraintVertical_bias="0.529" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image6"-->
+<!--        android:layout_width="38dp"-->
+<!--        android:layout_height="38dp"-->
+
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/video"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.715"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image7"-->
+<!--        android:layout_width="38dp"-->
+<!--        android:layout_height="38dp"-->
+
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/profile"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.924"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
