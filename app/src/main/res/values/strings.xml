@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">budgetapp</string>
-    <string-array name="languages">
+    <string-array name="Jenis">
         <item>Jajan</item>
         <item>Makan</item>
         <item>Internet</item>

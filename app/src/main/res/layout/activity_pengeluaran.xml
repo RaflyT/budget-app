@@ -12,9 +12,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:text="Add Transaction"
+        android:layout_marginBottom="4dp"
         android:textAlignment="center"
         android:textSize="16sp"
         android:layout_marginTop="15dp"
+
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +95,7 @@
             android:layout_marginEnd="10dp"
             android:background="@drawable/rounded_edge"
             android:hint="Nama Pengeluaran"
-            android:padding="8dp" />
+            android:padding="12dp" />
 
         <TextView
             android:id="@+id/besarpengeluaran"
@@ -111,7 +113,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:hint="Besar Pengeluaran"
-            android:padding="8dp"
+            android:padding="12dp"
             android:layout_marginTop="3dp"
             android:background="@drawable/rounded_edge" />
 
@@ -131,7 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:padding="8dp"
+            android:padding="12dp"
             android:hint="Tanggal"
             android:layout_marginTop="3dp"
             android:background="@drawable/rounded_edge"
@@ -149,15 +151,69 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinner_jenis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown"
 
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:padding="8dp"
+            android:padding="13dp"
             android:layout_marginTop="3dp"
             android:background="@drawable/rounded_edge"/>
+
+        <TextView
+            android:id="@+id/jenis_dompet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/inter"
+            android:text="Jenis Dompet"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_dompet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="13dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rounded_edge"/>
+
+        <TextView
+            android:id="@+id/catatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/inter"
+            android:text="Catatan"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Catatan"
+            android:padding="12dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/rounded_edge" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:paddingHorizontal="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#349053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
