@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">budgetapp</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
     <string-array name="Jenis">
         <item>Jajan</item>
         <item>Makan</item>
